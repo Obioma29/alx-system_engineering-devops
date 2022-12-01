@@ -1,1 +1,1 @@
-Switches the current userto the user betty
+My name is betty
