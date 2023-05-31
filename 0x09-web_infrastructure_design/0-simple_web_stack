@@ -1,0 +1,21 @@
+#Simple Web Stack
+
+![image od a simple web infrastructure](0-simple_web_stack.jpg)
+[Visit Board](https://imgur.com/a/oPBwmnm)
+
+##Specifics about this infrastructure
+
+A server is a piece of computer hardware or software that provides functionality for other programs or devices, called "clients".
+Role of a domain name is to identify internet resources, such as computers, network and services, with a text-based label that is easier to memorize than the numerical addresses used in the internet protocols.
+The type of DNS record www.foobar.com
+www.foobar.com uses an A record. This can be checked by using the dig command: dig a www.foobar.com
+Role of a web server is a software that serves web pages to clients upon their request. It does this over the protocol HTTP.
+Role of an application server is to install, operate and host applications and associated services for end users.
+Role of a database is to maintain a collection of information that is stored and organized so that it can be easily accessed, updated and managed.
+What the server uses to communicate with the client computer of the user requesting the website; Communication between the client and the server occurs over the internet network through the TCP/IP protocol suite.
+
+##Issues with this infrastructure
+SPOF(Single Points of Failure): The webinfrasture has a type of SPOF known as single server SPOF. It uses a data center where one server runs a single application. If the server fails, the application would become unstable and crash. Preventing users from accessing the application. The SPOF can also lead to a possible data loss.
+Downtime when maintenance is needed: When we need to run some maintenance checks on any component, they have to be put down or the server has to be turned off. Since there's only one server, the website would experience a downtime till its turned back on.
+Cannot scale if there's too much incoming traffic: It will be difficult to scale this infrastructure because one server contains all the required components. The server can quickly run out of resources or slow down when it starts receiving a lot of requests.
+
